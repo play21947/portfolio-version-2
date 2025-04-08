@@ -13,7 +13,7 @@ const Lib = () => {
                 <img className="w-[80px]" src="/github-white.svg"></img>
                 <p className="font-[bold] text-white text-[26px]">My Repository</p>
                 <div className="text-nowrap text-ellipsis overflow-hidden w-[320px] text-blue-500">
-                    <a href="https://github.com/play21947?tab=repositories" className="font-[regular] text-blue-500 cursor-pointer">https://github.com/p1ay2.14?tab=repositories</a>
+                    <a href="https://github.com/p1ay2invokio?tab=repositories" className="font-[regular] text-blue-500 cursor-pointer">https://github.com/p1ay2.14?tab=repositories</a>
                 </div>
             </div>
         </div>

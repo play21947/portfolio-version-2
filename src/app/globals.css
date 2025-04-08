@@ -60,3 +60,7 @@ html{
     width: 0;
   }
 }
+
+body, html{
+  overscroll-behavior: none;
+}

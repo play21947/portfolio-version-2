@@ -358,7 +358,7 @@ export default function Home() {
               <div className="flex gap-[10px] items-center mt-[10px]">
                 <NextImage className="w-[50px] h-[50px] object-cover rounded-full" alt="logo" width={50} height={50} src={'/education/cmu.webp'}></NextImage>
                 <div>
-                  <p className="font-[regular] text-white text-[14px]">years 1st</p>
+                  <p className="font-[regular] text-white text-[14px]">years 2nd</p>
                   <div>
                     <p className="font-[regular] text-white text-[14px]">Chiangmai University</p>
                     <p className=" text-white text-[14px] font-[kn-light]">สารสนเทศศึกษา</p>
