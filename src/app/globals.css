@@ -64,3 +64,352 @@ html{
 body, html{
   overscroll-behavior: none;
 }
+
+/* ==========================================================================
+   Premium Design System Overrides (Antigravity Modern Visuals)
+   ========================================================================== */
+
+/* 1. Global Container Styling (Vibrant Dark Gradients & Soft Shadows) */
+.bg-\[\#28282B\] {
+  background: linear-gradient(145deg, #1e1e21, #131315) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 2. Glassmorphism Navbar (Translucent & Blur Effects) */
+.w-full.h-\[60px\].bg-\[\#28282B\] {
+  background: rgba(18, 18, 20, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 3. Action Buttons & Micro-interactions (Tactile Lift & Scale) */
+.bg-blue-400\/30 {
+  border: 1px solid rgba(96, 165, 250, 0.2) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.bg-blue-400\/30:hover {
+  background-color: rgba(96, 165, 250, 0.25) !important;
+  transform: translate(-50%, -2px) scale(1.02) !important;
+  box-shadow: 0 8px 16px rgba(96, 165, 250, 0.25) !important;
+}
+.bg-blue-400\/30:active {
+  transform: translate(-50%, 0) scale(0.98) !important;
+}
+
+/* 4. Project Card Neon Hover Glow */
+.min-w-\[200px\] {
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s !important;
+}
+.min-w-\[200px\]:hover {
+  border-color: rgba(96, 165, 250, 0.4) !important;
+  box-shadow: 0 10px 25px -5px rgba(96, 165, 250, 0.25), 0 8px 10px -6px rgba(96, 165, 250, 0.25) !important;
+}
+
+/* 5. Avatar Backdrop Glow */
+.w-\[120px\].h-\[120px\].bg-blue-400\/30 {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.15), rgba(139, 92, 246, 0.15)) !important;
+  border: 1px solid rgba(96, 165, 250, 0.25) !important;
+  box-shadow: 0 8px 20px rgba(96, 165, 250, 0.15) !important;
+}
+
+/* 6. Skill Badges Scaling */
+.bg-\[\#808080\]\/20 {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.bg-\[\#808080\]\/20:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  transform: scale(1.05) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 7. Light Mode Theme Overrides */
+.theme-light {
+  color: #111827 !important;
+}
+
+.theme-light .text-white {
+  color: #111827 !important;
+}
+
+.theme-light .text-gray-400 {
+  color: #4b5563 !important;
+}
+
+.theme-light .border-gray-600 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.theme-light .bg-\[\#28282B\] {
+  background: linear-gradient(145deg, #ffffff, #f9fafb) !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03) !important;
+}
+
+.theme-light .w-full.h-\[60px\].bg-\[\#28282B\] {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03), 0 4px 6px -4px rgba(0, 0, 0, 0.02) !important;
+}
+
+.theme-light .bg-white\/20 {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.theme-light .bg-white\/60 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.theme-light .bg-black\/40 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .bg-black\/40 svg {
+  color: #111827 !important;
+}
+
+.theme-light .min-w-\[200px\]:hover {
+  border-color: rgba(59, 130, 246, 0.3) !important;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.12), 0 8px 10px -6px rgba(59, 130, 246, 0.12) !important;
+}
+
+.theme-light .bg-\[\#808080\]\/20 {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+.theme-light .bg-\[\#808080\]\/20:hover {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Ensure radar grid line and text are visible in light mode */
+.theme-light .recharts-polar-grid-concentric,
+.theme-light .recharts-polar-grid-angle line {
+  stroke: rgba(0, 0, 0, 0.1) !important;
+}
+
+.theme-light .recharts-polar-angle-axis-text tspan {
+  fill: #374151 !important;
+}
+
+/* 8. Project Title Headers - Glassmorphism & Themes */
+.min-w-\[200px\] > div.bg-white {
+  background: rgba(17, 24, 39, 0.8) !important; /* Sleek dark theme background */
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 2px solid rgba(96, 165, 250, 0.8) !important; /* Neon blue bottom border */
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.min-w-\[200px\] > div.bg-white p {
+  color: #f3f4f6 !important; /* Always readable white/light gray in dark mode */
+}
+
+.theme-light .min-w-\[200px\] > div.bg-white {
+  background: rgba(255, 255, 255, 0.85) !important; /* Clean light theme translucent background */
+  border-bottom: 2px solid rgba(59, 130, 246, 0.8) !important; /* Premium blue bottom border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .min-w-\[200px\] > div.bg-white p {
+  color: #111827 !important; /* Always readable dark text in light mode */
+}
+
+/* 9. Mailbox Modal - Dark & Light Themes */
+.bg-black\/80 > div.bg-white {
+  background: rgba(18, 18, 20, 0.95) !important; /* Premium dark background */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.bg-black\/80 > div.bg-white p {
+  color: #ffffff !important;
+}
+
+.bg-black\/80 > div.bg-white input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  transition: border-color 0.2s !important;
+}
+
+.bg-black\/80 > div.bg-white input::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.bg-black\/80 > div.bg-white input:focus {
+  border-bottom: 2px solid #3b82f6 !important;
+}
+
+.bg-black\/80 > div.bg-white button {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+  color: #ffffff !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.bg-black\/80 > div.bg-white button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4) !important;
+}
+
+/* Light mode overrides for modal */
+.theme-light .bg-black\/80 > div.bg-white {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important;
+  color: #111827 !important;
+}
+
+.theme-light .bg-black\/80 > div.bg-white p {
+  color: #111827 !important;
+}
+
+.theme-light .bg-black\/80 > div.bg-white input {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2) !important;
+  color: #111827 !important;
+}
+
+.theme-light .bg-black\/80 > div.bg-white input::placeholder {
+  color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.theme-light .bg-black\/80 > div.bg-white input:focus {
+  border-bottom: 2px solid #3b82f6 !important;
+}
+
+.theme-light .bg-black\/80 > div.bg-white button {
+  background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+  color: #ffffff !important;
+}
+
+/* 10. Comment List Cards - Dark & Light Themes */
+.h-\[180px\] .bg-white {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #f3f4f6 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.h-\[180px\] .bg-white p {
+  color: #e5e7eb !important;
+}
+
+.h-\[180px\] .bg-white svg {
+  color: #f3f4f6 !important;
+}
+
+/* Light mode comments card */
+.theme-light .h-\[180px\] .bg-white {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  color: #111827 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-light .h-\[180px\] .bg-white p {
+  color: #1f2937 !important;
+}
+
+.theme-light .h-\[180px\] .bg-white svg {
+  color: #374151 !important;
+}
+
+/* 11. Recharts Legend & Grid lines default (Dark Mode) */
+.recharts-polar-angle-axis-text tspan {
+  fill: rgba(255, 255, 255, 0.7) !important;
+}
+.recharts-polar-grid-concentric,
+.recharts-polar-grid-angle line {
+  stroke: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 12. CustomAlert - Dark & Light Themes */
+.z-\[1\] > div.bg-white\/40 {
+  background: rgba(18, 18, 20, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6) !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+}
+
+.z-\[1\] > div.bg-white\/40 p {
+  color: #ffffff !important;
+}
+
+/* CustomAlert Accept/Cancel buttons */
+.z-\[1\] > div.bg-white\/40 .bg-green-500 {
+  background: linear-gradient(135deg, #10b981, #047857) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+.z-\[1\] > div.bg-white\/40 .bg-green-500:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4) !important;
+}
+.z-\[1\] > div.bg-white\/40 .bg-green-500 p {
+  color: #ffffff !important;
+}
+
+.z-\[1\] > div.bg-white\/40 .bg-red-500 {
+  background: linear-gradient(135deg, #ef4444, #b91c1c) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+.z-\[1\] > div.bg-white\/40 .bg-red-500:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4) !important;
+}
+.z-\[1\] > div.bg-white\/40 .bg-red-500 p {
+  color: #ffffff !important;
+}
+
+/* Light mode for CustomAlert */
+.theme-light .z-\[1\] > div.bg-white\/40 {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15) !important;
+  color: #111827 !important;
+}
+
+.theme-light .z-\[1\] > div.bg-white\/40 p {
+  color: #111827 !important;
+}
+
+.theme-light .z-\[1\] > div.bg-white\/40 .bg-green-500 p {
+  color: #ffffff !important;
+}
+
+.theme-light .z-\[1\] > div.bg-white\/40 .bg-red-500 p {
+  color: #ffffff !important;
+}
+
+/* 13. Progress Bar Track Style */
+.progress-track {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.theme-light .progress-track {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(0, 0, 0, 0.04) !important;
+}
